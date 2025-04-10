@@ -1,0 +1,49 @@
+name: Bug report
+description: Bugs in Picovoice Console
+title: "Console Issue: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Before** reporting an issue, make sure to search [existing issues](https://github.com/Picovoice/console/issues).
+  - type: checkboxes
+    id: check
+    attributes:
+      label: Have you checked the docs and existing issues?
+      description: Make sure you have checked all of the below before submitting an issue
+      options:
+        - label: I have searched the existing issues for Picovoice Console
+          required: true
+  - type: input
+    id: Browser
+    attributes:
+      label: "Browser version"
+      placeholder: "Chrome 134, etc."
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expectation
+    attributes:
+      label: Expected Behavior
+      description: A concise description of what you expected to happen.
+    validations:
+      required: true
